@@ -129,9 +129,6 @@ body{
 }
 
 @media (min-width:768px){
-  body{
-    background-color: var(--background_color_tablet);
-  }
   .menuCard{
   background-color: var(--accent-color);
   border-bottom: 5px solid var(--background_color);
@@ -202,19 +199,5 @@ body{
   }
   100%{
     transform: rotate(360deg);
-  }
-}
-@keyframes fadeColor{
-  0%{
-    
-  }
-  50%{
-    background-color: var(--accent-color);
-  }
-  75%{
-    background-color: var(--background_color);
-  }
-  100%{
-
   }
 }
