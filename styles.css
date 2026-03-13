@@ -44,6 +44,11 @@ body{
   justify-self: center;
   margin-bottom: -50px;
 }
+
+#logo:active{
+  animation: rotate 4s ease-in-out infinite;
+}
+
 #title{
   display: flex;
   justify-self: center;
@@ -57,7 +62,7 @@ body{
 }
 
 #menu{
-  padding-bottom: 2%;
+  
   display:flex;
   flex-direction: column;
 }
@@ -68,6 +73,7 @@ body{
   padding: 5%;
   padding-left: 5%;
   padding-right: 5%;
+  transition: background-color 0.5s;
 }
 .menuCard:hover{
   background-color: var(--alert-color);
@@ -96,14 +102,14 @@ body{
   border-radius: 15px;
   border-color: var(--accent-color);
   background-color: var(--background_color);
-  
+  transition: box-shadow 0.5s;
 }
 #hero button:active{
   background-color: var(--accent-color);
   color: var(--alert-color);
 }
 #hero button:hover{
-  box-shadow: var(--shadow-box) 0px 5px 15px;
+  box-shadow: var(--shadow-box) 2px 15px 15px;
 }
 #heroContent{
   display: flex;
@@ -146,13 +152,12 @@ body{
 
 @media (min-width:1024px){
   body{
-    background-color: var(--background_color_desktop);
+    background-color: var(--background_color);
   }
     #menu{
-  padding-bottom: 2%;
-  display:flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
   }
   .menuCard{
     background-color: var(--accent-color);
@@ -160,7 +165,6 @@ body{
     padding: 2%;
     padding-left: 5%;
     padding-right: 5%;
-    border-radius: 15px;
   }
   #hero{
     flex-direction: row;
@@ -185,5 +189,27 @@ body{
   border-right: solid var(--accent-color);
   border-top: solid var(--accent-color)
 }
+}
 
+@keyframes rotate{
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+@keyframes fadeColor{
+  0%{
+    
+  }
+  50%{
+    background-color: var(--accent-color);
+  }
+  75%{
+    background-color: var(--background_color);
+  }
+  100%{
+
+  }
 }
