@@ -40,9 +40,9 @@ body{
 }
 
 #logo{
+  border-radius: 50%;
   display: flex;
   justify-self: center;
-  margin-bottom: -50px;
 }
 
 #logo:active{
@@ -63,7 +63,6 @@ body{
 
 #menu{
   
-  border-radius: 25px;
   display:flex;
   flex-direction: column;
 }
@@ -118,8 +117,8 @@ body{
   align-items: center;
 }
 #skills, #contact, #resume{
-  margin-top: 5%;
   padding: 5%;
+  border-right: solid var(--accent-color);
   border-top: solid var(--accent-color)
 }
 #skills-grid{
@@ -130,6 +129,9 @@ body{
 }
 
 @media (min-width:768px){
+  body{
+    background-color: var(--background_color_tablet);
+  }
   .menuCard{
   background-color: var(--accent-color);
   border-bottom: 5px solid var(--background_color);
@@ -150,11 +152,6 @@ body{
   #heroContent button{
   margin-top: 100%;
   }
-  #skills, #contact, #resume{
-  margin-top: 5%;
-  padding: 5%;
-  border-top: solid var(--accent-color)
-}
 }
 
 
@@ -163,7 +160,6 @@ body{
     background-color: var(--background_color);
   }
     #menu{
-    overflow: hidden;
     display:flex;
     flex-direction: row;
     justify-content: center;
