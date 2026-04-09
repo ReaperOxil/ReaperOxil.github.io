@@ -1,3 +1,6 @@
+html{
+    scroll-behavior:smooth;
+}
 :root{
   --background_color: #191645;
   --background_color_tablet: #283618;
@@ -40,6 +43,7 @@ body{
 }
 
 #logo{
+  width: 300px;
   border-radius: 50%;
   display: flex;
   justify-self: center;
@@ -68,6 +72,7 @@ body{
 }
 
 .menuCard{
+  font-size: 100%;
   background-color: var(--accent-color);
   border-bottom: 5px solid var(--background_color);
   padding: 5%;
@@ -83,15 +88,17 @@ body{
 
 
 #hero{
-  margin: 0 auto;
+  margin-left: 10%;
+  margin-right: 10%;
   display: flex;
   flex-direction: column;
   background-color: var(--alert-color);
   border-radius: 15px;
-  max-width: 80%;
+  max-width: 100%;
   align-items: center;
 }
 #hero img{
+  width: 100%;
   border-radius: 11px;
 }
 
@@ -139,12 +146,19 @@ body{
   #hero{
     flex-direction: row;
     max-width: 800px;
-    
+    margin-bottom: 5%;
   }
-    #heroContent{
+  #hero img{
+  width: 2000px;
+  margin-bottom: -5px;
+  padding-right: 5%;
+  }
+
+  #heroContent{
   display: flex;
   flex-direction: column;
-  align-items: center;
+  margin-left: 2%;
+  
   }
   #heroContent button{
   margin-top: 100%;
@@ -157,18 +171,18 @@ body{
     background-color: var(--background_color);
   }
     #menu{
-    display:flex;
+    display: flex;
     flex-direction: row;
-    justify-content: center;
   }
   .menuCard{
+    display:flex;
+    justify-content: center;
     background-color: var(--accent-color);
     border-bottom: none;
-    padding: 2%;
-    padding-left: 5%;
-    padding-right: 5%;
+    width: 100%;
   }
   #hero{
+    margin: 0 auto;
     flex-direction: row;
     max-width: 800px;
   }
@@ -181,8 +195,14 @@ body{
  #heroContent button{
   margin-top: 100%;
  }
+ #hero img{
+  width: 2000px;
+  margin-bottom: -5px;
+  }
+
 #info{
   padding-top: 2%;
+  margin-bottom: -10px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
